@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Config", "_Config", "{AE2AC801-F5B3-4091-A190-F1BFB0CB53B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{0BA1026F-391C-4461-9879-F23B18E7D43D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{10436794-AF2E-48C2-86A1-053E61A17659}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{A19FA8D6-A7F6-4FF5-B304-94F4D9CC76EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicContent", "BasicContent", "{4ABA8AB4-FF9A-4895-AB34-4FFBE42A4B15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rain.Feature.BasicContent", "src\Feature\BasicContent\code\Rain.Feature.BasicContent.csproj", "{2DD81B04-31B7-4A8D-B081-2F84721DE9F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DD81B04-31B7-4A8D-B081-2F84721DE9F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD81B04-31B7-4A8D-B081-2F84721DE9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD81B04-31B7-4A8D-B081-2F84721DE9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD81B04-31B7-4A8D-B081-2F84721DE9F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4ABA8AB4-FF9A-4895-AB34-4FFBE42A4B15} = {0BA1026F-391C-4461-9879-F23B18E7D43D}
+		{2DD81B04-31B7-4A8D-B081-2F84721DE9F6} = {4ABA8AB4-FF9A-4895-AB34-4FFBE42A4B15}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {786FB33F-3202-4AE8-8F6F-F905D09A26AF}
+	EndGlobalSection
+EndGlobal
