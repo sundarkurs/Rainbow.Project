@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicContent", "BasicConten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rain.Feature.BasicContent", "src\Feature\BasicContent\code\Rain.Feature.BasicContent.csproj", "{2DD81B04-31B7-4A8D-B081-2F84721DE9F6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{E4FFF996-4185-44BB-9812-15CDF3A651F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rain.Project.Website", "src\Project\Website\code\Rain.Project.Website.csproj", "{38E65DD2-2B4A-4FEE-B2CA-37AC6931A638}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{2DD81B04-31B7-4A8D-B081-2F84721DE9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DD81B04-31B7-4A8D-B081-2F84721DE9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DD81B04-31B7-4A8D-B081-2F84721DE9F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E65DD2-2B4A-4FEE-B2CA-37AC6931A638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E65DD2-2B4A-4FEE-B2CA-37AC6931A638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E65DD2-2B4A-4FEE-B2CA-37AC6931A638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E65DD2-2B4A-4FEE-B2CA-37AC6931A638}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4ABA8AB4-FF9A-4895-AB34-4FFBE42A4B15} = {0BA1026F-391C-4461-9879-F23B18E7D43D}
 		{2DD81B04-31B7-4A8D-B081-2F84721DE9F6} = {4ABA8AB4-FF9A-4895-AB34-4FFBE42A4B15}
+		{E4FFF996-4185-44BB-9812-15CDF3A651F2} = {A19FA8D6-A7F6-4FF5-B304-94F4D9CC76EE}
+		{38E65DD2-2B4A-4FEE-B2CA-37AC6931A638} = {E4FFF996-4185-44BB-9812-15CDF3A651F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
