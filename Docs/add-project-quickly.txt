@@ -1,0 +1,42 @@
+Steps to add new project to the solution. Helix conventions
+
+1. Create a folder, BasicContent, under the Feature layer (VS) .sol/Feature
+
+2. Create a foldre, BasicContent, under the Feature layer (FS) src/Feature
+
+3. Right click the BasicContent folder in VS and add a new project
+
+4. Select ASP.NET Web App project (Empty MVC project, No authentication)
+
+5. Name the project as "code" (later we have to rename it to helix convention)
+WHY? Helix convention specifies that in the file structure on disk, all of the code should be in a "code" folder underneath the folder with the module/component name.
+
+6. Remove the unwanted things which are generated automatically
+ - Global.asax
+ - App_Start
+ - App_Data
+
+7. Add App_Config folder
+
+8. There are 2 Web.config files. One in the root and the other one in the Views folder. Open the properties of these and set 
+ - Build Action -> None
+ - Copy to Output Directory -> Do not Copy
+
+9. Now rename the newly added project to helix standards
+
+We’re actually going to do this in three different places. 
+ - right-click the project, currently named “code,” and click properties. Change both the Assembly name and Default namespace to My.Feature.BasicContent. 
+ - right-click the project again and rename “code” to My.Feature.BasicContent
+ - In Web.config file in the Views folder, make sure you remove the reference to the "code" namespace. While you’re there, add a reference to Sitecore.Mvc, as this will help IntelliSense recognize your Sitecore HTML helpers. Also go ahead and change the version number of System.Web.Mvc to be the correct one for the project
+
+10. Add Sitecore packages from NuGet
+ - Sitecore.Kernel 
+ - Sitecore.Mvc
+
+11. Highlight all of your references in the project. In properties set 
+ - Copy Local -> false
+
+
+
+
+

@@ -1,0 +1,30 @@
+Tour
+- Id
+- Code
+- Name
+- Description
+- Price
+- Image
+
+--------------------------------------------------
+
+1>
+
+Header (Search)
+--------------
+
+-> Featured
+-> Recommended
+
+---------------
+Footer
+
+2>
+
+Header (Search)
+--------------
+
+-> Tours
+
+---------------
+Footer
