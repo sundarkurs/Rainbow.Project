@@ -1,0 +1,13 @@
+
+npm install --global gulp-cli
+
+npm init 
+(go with default)
+
+npm install --save-dev gulp
+
+gulp --version
+
+Create gulpfile.js file and save
+
+gulp (test it)
