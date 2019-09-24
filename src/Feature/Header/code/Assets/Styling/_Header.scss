@@ -1,5 +1,5 @@
-﻿
-.header {
-    color: red;
-}
+﻿@import '_Variables.scss';
 
+.header {
+    color: $header-color;
+}
