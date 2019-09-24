@@ -1,4 +1,8 @@
-﻿
+$primary-color: purple;
+$secondary-color: red;
+$tertiary-color: magenta;
+
+
 
 .carousel-item {
     width: 500px;
@@ -12,3 +16,19 @@
     flex-direction: column;
 }
 
+
+
+.footer {
+    color: green;
+}
+
+
+.header {
+    color: red;
+}
+
+
+
+.main {
+    display: flex;
+}

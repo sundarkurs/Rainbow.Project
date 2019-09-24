@@ -215,6 +215,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Styling\helix-styling.css" />
     <Content Include="Views\Layouts\MainLayout.cshtml" />
     <Content Include="Assets\Styling\_Website.scss" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
