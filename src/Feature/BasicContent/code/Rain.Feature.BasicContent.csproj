@@ -216,6 +216,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\BasicContent\Index.cshtml" />
+    <Content Include="Assets\Styling\_BasicContent.scss" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Web.config" />
