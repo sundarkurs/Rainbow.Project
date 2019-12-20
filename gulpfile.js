@@ -4,59 +4,115 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var header = require('gulp-header');
+var foreach = require("gulp-foreach");
 
 //Config
-var foundationPath = 'src/foundation/*/code/Assets/Styling/*.scss';
-var featurePath = 'src/feature/*/code/Assets/Styling/*.scss';
-var projectPath = 'src/project/*/code/Assets/Styling/*.scss';
-var styleRepo = 'styleRepo';
-var stagingStyles = [styleRepo + '/foundation.css', styleRepo + '/feature.css', styleRepo + '/project.css'];
-var prodOutput = 'src/Project/Website/code/Assets/Styling';
-var stylingPath = 'src/+(Feature|Foundation|Project)/*/code/Assets/Styling/*.scss';
+var scssConfig = {
+    foundationPath: 'src/foundation/*/code/Assets/Styling/*.scss',
+    featurePath: 'src/feature/*/code/Assets/Styling/*.scss',
+    projectPath: 'src/project/*/code/Assets/Styling/*.scss',
+    styleRepo: 'styleRepo',
+    minOutput: 'src/Project/Website/code/Assets/Styling',
+    stylingPath: 'src/+(Feature|Foundation|Project)/*/code/Assets/Styling/*.scss'
 
-//Compile Foundation level files
-gulp.task('foundation-sass', function () {
-    return gulp.src(foundationPath)
+};
+
+//Compile Foundation layer files
+gulp.task('Compile-Foundation-Styles', function () {
+    return gulp.src(scssConfig.foundationPath)
         .pipe(sass({
             includePaths: ['src/foundation/SitecoreExtensions/code/Assets/Styling/']
         }))
         .pipe(concat('foundation.css'))
         .pipe(header('/* FOUNDATION STYLING */'))
-        .pipe(gulp.dest(styleRepo));
+        .pipe(gulp.dest(scssConfig.styleRepo));
 });
 
-//Compile Feature level files
-gulp.task('feature-sass', function () {
-    return gulp.src(featurePath)
+//Compile Feature layer files
+gulp.task('Compile-Feature-Styles', function () {
+    return gulp.src(scssConfig.featurePath)
         .pipe(sass({
             includePaths: ['src/foundation/SitecoreExtensions/code/Assets/Styling/']
         }))
         .pipe(concat('feature.css'))
         .pipe(header('/* FEATURE STYLING */'))
-        .pipe(gulp.dest(styleRepo));
+        .pipe(gulp.dest(scssConfig.styleRepo));
 });
 
-//Compile Project level files
-gulp.task('project-sass', function () {
-    return gulp.src(projectPath)
+//Compile Project layer files
+gulp.task('Compile-Project-Styles', function () {
+    return gulp.src(scssConfig.projectPath)
         .pipe(sass({
             includePaths: ['src/foundation/SitecoreExtensions/code/Assets/Styling/']
         }))
         .pipe(concat('project.css'))
         .pipe(header('/* PROJECT STYLING */'))
-        .pipe(gulp.dest(styleRepo));
+        .pipe(gulp.dest(scssConfig.styleRepo));
 });
 
-//Concatenate foundation, feature, and project layer, then minify
-gulp.task('helix-sass', function () {
+// Concatenate foundation, feature, and project layer, then minify
+gulp.task('Compile-All-Styles', function () {
+
+    var stagingStyles = [scssConfig.styleRepo + '/foundation.css', scssConfig.styleRepo + '/feature.css', scssConfig.styleRepo + '/project.css'];
+
     return gulp.src(stagingStyles, { allowEmpty: true }) //use foundation, feature, project styling
         .pipe(concat('helix-styling.css'))  //concatenate all three styling files into one
         .pipe(cleanCSS())                   //minify
         .pipe(header('/* THIS IS A GENERATED FILE */'))
-        .pipe(gulp.dest(prodOutput));        //output to folder
+        .pipe(gulp.dest(scssConfig.minOutput));        //output to folder
 });
 
 //Automate compilation of sass files
-gulp.task('helix-watch', function () {
-    gulp.watch(stylingPath, gulp.series('foundation-sass', 'feature-sass', 'project-sass', 'helix-sass'));
+gulp.task('Compile-Styles-Auto', function () {
+    gulp.watch(scssConfig.stylingPath, gulp.series('Compile-Foundation-Styles', 'Compile-Feature-Styles', 'Compile-Project-Styles', 'Compile-All-Styles'));
 });
+
+
+
+// Binaries Related
+var config = require("./gulp-config.js")();
+
+gulp.task('Publish-Assemblies', function () {
+
+    var root = "./src";
+    var roots = [root + "/**/code/bin"];
+    var files = "/**/Rain.{Feature,Foundation,Project}.*.{dll,pdb}";
+    var destination = config.websiteRoot + "/bin/";
+
+    return gulp.src(roots, { base: root }).pipe(
+        foreach(function (stream, rootFolder) {
+            console.log(rootFolder);
+
+            gulp.src(rootFolder.path + files)
+                .pipe(gulp.dest(destination));
+
+            return stream;
+        })
+    );
+
+});
+
+gulp.task("Publish-Assemblies-Auto",
+    function () {
+        var root = "./src";
+        var roots = [root + "/**/code/bin"];
+        var files = "/**/Rain.{Feature,Foundation,Project}.*.{dll,pdb}";
+        var destination = config.websiteRoot + "/bin/";
+
+        return gulp.src(roots, { base: root }).pipe(
+            foreach(function (stream, rootFolder) {
+                console.log(rootFolder);
+                gulp.watch(rootFolder.path + files,
+                    function (event) {
+                        console.log('something changed');
+                        if (event.type === "changed") {
+                            console.log("publish this file " + event.path);
+                            gulp.src(event.path, { base: rootFolder.path }).pipe(gulp.dest(destination));
+                        }
+                        console.log("published " + event.path);
+                    });
+                return stream;
+            })
+        );
+    });
+
