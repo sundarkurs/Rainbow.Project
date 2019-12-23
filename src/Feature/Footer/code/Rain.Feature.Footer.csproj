@@ -218,9 +218,11 @@
     <Content Include="Assets\Styling\_Footer.scss" />
     <Content Include="Assets\Styling\Footer.scss" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Footer\Footer.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\FooterController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -236,7 +238,6 @@
   <ItemGroup>
     <Folder Include="App_Config\" />
     <Folder Include="App_Start\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,21 @@
+/* FEATURE STYLING */.carousel-item {
+  width: 500px;
+  height: 400px;
+  background-color: red; }
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: magenta; }
+
+.my {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: purple; }
+
+.footer {
+  color: #ef614e; }
+
+.header {
+  color: blue; }

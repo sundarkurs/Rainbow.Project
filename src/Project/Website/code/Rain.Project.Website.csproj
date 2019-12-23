@@ -215,10 +215,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Styling\helix-styling.css" />
     <Content Include="Views\Layouts\MainLayout.cshtml" />
     <Content Include="Assets\Styling\_Website.scss" />
     <Content Include="Assets\Styling\Website.scss" />
+    <Content Include="App_Config\Include\Project\Website\Website.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Web.config" />
@@ -237,7 +237,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\" />
+    <Folder Include="App_Start\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>

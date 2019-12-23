@@ -1,7 +1,4 @@
 ﻿@using Sitecore.Mvc
-@{
-    Layout = null;
-}
 
 <!DOCTYPE html>
 
@@ -13,8 +10,14 @@
     <link href="~/Assets/Styling/helix-styling.css" rel="stylesheet" />
 </head>
 <body>
+    <header>
+        @Html.Sitecore().Placeholder("header")
+    </header>
     <div>
         @Html.Sitecore().Placeholder("main")
     </div>
+    <footer>
+        @Html.Sitecore().Placeholder("footer")
+    </footer>
 </body>
 </html>

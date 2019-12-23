@@ -11,8 +11,8 @@ var scssConfig = {
     foundationPath: 'src/foundation/*/code/Assets/Styling/*.scss',
     featurePath: 'src/feature/*/code/Assets/Styling/*.scss',
     projectPath: 'src/project/*/code/Assets/Styling/*.scss',
-    styleRepo: 'styleRepo',
-    minOutput: 'src/Project/Website/code/Assets/Styling',
+    stylesStagingFolder: 'stylesStagingFolder',
+    minOutput: 'stylesStagingFolder',
     stylingPath: 'src/+(Feature|Foundation|Project)/*/code/Assets/Styling/*.scss'
 
 };
@@ -25,7 +25,7 @@ gulp.task('Compile-Foundation-Styles', function () {
         }))
         .pipe(concat('foundation.css'))
         .pipe(header('/* FOUNDATION STYLING */'))
-        .pipe(gulp.dest(scssConfig.styleRepo));
+        .pipe(gulp.dest(scssConfig.stylesStagingFolder));
 });
 
 //Compile Feature layer files
@@ -36,7 +36,7 @@ gulp.task('Compile-Feature-Styles', function () {
         }))
         .pipe(concat('feature.css'))
         .pipe(header('/* FEATURE STYLING */'))
-        .pipe(gulp.dest(scssConfig.styleRepo));
+        .pipe(gulp.dest(scssConfig.stylesStagingFolder));
 });
 
 //Compile Project layer files
@@ -47,13 +47,13 @@ gulp.task('Compile-Project-Styles', function () {
         }))
         .pipe(concat('project.css'))
         .pipe(header('/* PROJECT STYLING */'))
-        .pipe(gulp.dest(scssConfig.styleRepo));
+        .pipe(gulp.dest(scssConfig.stylesStagingFolder));
 });
 
 // Concatenate foundation, feature, and project layer, then minify
 gulp.task('Compile-All-Styles', function () {
 
-    var stagingStyles = [scssConfig.styleRepo + '/foundation.css', scssConfig.styleRepo + '/feature.css', scssConfig.styleRepo + '/project.css'];
+    var stagingStyles = [scssConfig.stylesStagingFolder + '/foundation.css', scssConfig.stylesStagingFolder + '/feature.css', scssConfig.stylesStagingFolder + '/project.css'];
 
     return gulp.src(stagingStyles, { allowEmpty: true }) //use foundation, feature, project styling
         .pipe(concat('helix-styling.css'))  //concatenate all three styling files into one

@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Config", "_Config", "{AE2AC801-F5B3-4091-A190-F1BFB0CB53B6}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js.js = gulp-config.js.js
+		package.json = package.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{0BA1026F-391C-4461-9879-F23B18E7D43D}"
 EndProject
@@ -29,7 +33,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rain.Feature.Footer", "src\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{54620E2F-F498-4397-B514-DA37A7676E6E}"
 	ProjectSection(SolutionItems) = preProject
-		gulp-config.js.js = gulp-config.js.js
 		gulpfile.js = gulpfile.js
 	EndProjectSection
 EndProject
@@ -80,7 +83,7 @@ Global
 		{5778ACD7-600E-48CC-98FE-B8818C5669C9} = {A27ACBF6-9A06-40C6-9FE0-E486CB2AF54D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {786FB33F-3202-4AE8-8F6F-F905D09A26AF}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {786FB33F-3202-4AE8-8F6F-F905D09A26AF}
 	EndGlobalSection
 EndGlobal
