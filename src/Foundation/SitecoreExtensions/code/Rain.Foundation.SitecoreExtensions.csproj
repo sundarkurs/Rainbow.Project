@@ -216,8 +216,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Styling\_Variables.scss" />
-    <Content Include="App_Config\Include\Foundation\Pipeline.config" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="App_Config\Include\Foundation\Pipeline.InitializeRoute.config" />
+    <None Include="Properties\PublishProfiles\RainPublish.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

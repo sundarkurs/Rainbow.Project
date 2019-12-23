@@ -219,7 +219,7 @@
     <Content Include="Assets\Styling\Head.scss" />
     <Content Include="Views\Header\Header.cshtml" />
     <Content Include="Views\Header\HeaderWithLogo.cshtml" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\RainPublish.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -217,8 +217,8 @@
   <ItemGroup>
     <Content Include="Assets\Styling\_Footer.scss" />
     <Content Include="Assets\Styling\Footer.scss" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\Footer\Footer.cshtml" />
+    <None Include="Properties\PublishProfiles\RainPublish.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
