@@ -10,6 +10,8 @@ namespace Rain.Foundation.SitecoreExtensions.Pipelines
         public void Process(PipelineArgs args)
         {
             RouteTable.Routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+
         }
     }
 }
