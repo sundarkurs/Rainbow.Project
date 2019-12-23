@@ -1,0 +1,30 @@
+﻿@using Sitecore.Mvc
+@using System.Collections.Generic;
+@model List<Rain.Feature.Header.Models._GenericLink>
+
+<div class="top-header">
+    <div class="content-wrapper">
+        <div class="top-bar__left">
+            <ul class="menu">
+                <li class="menu__item menu__item--mobile">
+                    <span class="brand-name">Online shopping.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar__right">
+            <ul class="menu">
+                @foreach (var item in Model)
+                {
+                    if (item.Link == null)
+                    {
+                        <li class="menu__item"><a href="#">@item.Title</a></li>
+                    }
+                    else
+                    {
+                        <li class="menu__item"><a href="@item.Link.Url">@item.Title</a></li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</div>

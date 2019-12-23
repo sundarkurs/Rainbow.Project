@@ -215,15 +215,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Website\image\website-logo.png" />
     <Content Include="Views\Layouts\MainLayout.cshtml" />
     <Content Include="Assets\Styling\_Website.scss" />
     <Content Include="Assets\Styling\Website.scss" />
-    <Content Include="App_Config\Include\Project\Website\Website.config" />
+    <Content Include="App_Config\Include\Project\Website\Website.Domains.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\RainPublish.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Personalization\WebsiteDomains.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

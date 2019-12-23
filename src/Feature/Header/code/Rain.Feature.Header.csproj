@@ -217,13 +217,15 @@
   <ItemGroup>
     <Content Include="Assets\Styling\_Header.scss" />
     <Content Include="Assets\Styling\Head.scss" />
-    <Content Include="Views\Header\Header.cshtml" />
-    <Content Include="Views\Header\HeaderWithLogo.cshtml" />
+    <Content Include="Views\Header\TopHeader.cshtml" />
+    <Content Include="Views\Header\MainHeader.cshtml" />
     <None Include="Properties\PublishProfiles\RainPublish.pubxml" />
+    <Content Include="Views\Header\MainHeaderWithLinks.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HeaderController.cs" />
+    <Compile Include="Models\_GenericLink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -239,7 +241,6 @@
   <ItemGroup>
     <Folder Include="App_Config\" />
     <Folder Include="App_Start\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
