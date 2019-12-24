@@ -224,6 +224,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\FooterController.cs" />
+    <Compile Include="Models\Copyright.cs" />
     <Compile Include="Models\_GenericLink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

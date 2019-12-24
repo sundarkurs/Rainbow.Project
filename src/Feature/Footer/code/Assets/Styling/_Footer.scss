@@ -1,8 +1,8 @@
 ﻿@import '_Variables.scss';
 
 .footer-bar {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: $footer-bg-color;
     color: $footer-color;
 }
@@ -20,4 +20,11 @@
 
 .footer-bar li {
     display: block;
+    float: right;
+    margin-left: 50px;
+}
+
+.copyright-bar {
+    background-color: $footer-bg-color;
+    font-size: 12px;
 }

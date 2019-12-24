@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using Rain.Feature.Footer.Models;
+using Sitecore;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Mvc.Presentation;
@@ -39,7 +40,8 @@ namespace Rain.Feature.Footer.Controllers
 
         public ActionResult Copyright()
         {
-            return View();
+            var item = Context.Database.GetItem(Context.Site.RootPath);
+            return View(new Copyright() { Text = item.Fields["Copyright"].ToString() });
         }
 
         public Item DataSourceItem
