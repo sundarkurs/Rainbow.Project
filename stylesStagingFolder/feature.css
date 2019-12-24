@@ -1,21 +1,39 @@
-/* FEATURE STYLING */.carousel-item {
-  width: 500px;
-  height: 400px;
-  background-color: red; }
+/* FEATURE STYLING */
+.footer-bar {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #2f2f2f;
+  color: #fff; }
 
-.content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: magenta; }
+.footer-bar li a:hover {
+  color: #1abc9c !important; }
 
-.my {
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: purple; }
+.footer-bar li a {
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-decoration: none;
+  background-color: transparent; }
 
-.footer {
-  color: #ef614e; }
+.footer-bar li {
+  display: block; }
 
-.header {
-  color: blue; }
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7; }
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 4px; }
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important; }
+
+.nav-top-bar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 10px; }

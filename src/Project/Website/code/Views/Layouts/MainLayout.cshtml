@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width" />
     <title></title>
 
-    <link href="~/Assets/Styling/helix-styling.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Assets/bootstrap/montserrat.css">
+    <script src="~/Assets/jquery/jquery.min.js"></script>
+    <script src="~/Assets/bootstrap/bootstrap.min.js"></script>
+
+    <link href="~/Assets/css/website.css" rel="stylesheet" />
+
 </head>
 <body>
     <header>
@@ -16,6 +22,7 @@
     <div>
         @Html.Sitecore().Placeholder("main")
     </div>
+
     <footer>
         @Html.Sitecore().Placeholder("footer")
     </footer>

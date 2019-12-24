@@ -1,5 +1,23 @@
 ﻿@import '_Variables.scss';
 
-.footer {
+.footer-bar {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: $footer-bg-color;
     color: $footer-color;
+}
+
+.footer-bar li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-bar li a {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.footer-bar li {
+    display: block;
 }

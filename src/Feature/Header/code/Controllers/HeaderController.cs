@@ -20,7 +20,27 @@ namespace Rain.Feature.Header.Controllers
 
         public ActionResult MainHeaderWithLinks()
         {
-            return View();
+            var viewModel = new List<_GenericLink>();
+
+            var dataSourceItem = DataSourceItem;
+            if (dataSourceItem != null)
+            {
+                var navigationLinks = dataSourceItem.Children;
+
+                if (navigationLinks != null || navigationLinks.Count > 0)
+                {
+                    navigationLinks.ToList().ForEach(x =>
+                    {
+                        viewModel.Add(new _GenericLink()
+                        {
+                            Title = x.Fields["Title"].ToString(),
+                            Link = (LinkField)x.Fields["Link"]
+                        });
+                    });
+                }
+            }
+
+            return View(viewModel);
         }
 
         public ActionResult TopHeader()

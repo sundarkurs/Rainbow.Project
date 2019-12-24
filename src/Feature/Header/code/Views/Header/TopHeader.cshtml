@@ -2,29 +2,23 @@
 @using System.Collections.Generic;
 @model List<Rain.Feature.Header.Models._GenericLink>
 
-<div class="top-header">
-    <div class="content-wrapper">
-        <div class="top-bar__left">
-            <ul class="menu">
-                <li class="menu__item menu__item--mobile">
-                    <span class="brand-name">Online shopping.</span>
-                </li>
-            </ul>
-        </div>
-        <div class="top-bar__right">
-            <ul class="menu">
+<nav class="navbar navbar-default nav-top-bar">
+    <div class="container">
+
+        <div class="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
                 @foreach (var item in Model)
                 {
                     if (item.Link == null)
                     {
-                        <li class="menu__item"><a href="#">@item.Title</a></li>
+                        <li><a href="#">@item.Title</a></li>
                     }
                     else
                     {
-                        <li class="menu__item"><a href="@item.Link.Url">@item.Title</a></li>
+                        <li><a href="@item.Link.Url">@item.Title</a></li>
                     }
                 }
             </ul>
         </div>
     </div>
-</div>
+</nav>

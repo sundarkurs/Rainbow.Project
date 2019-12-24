@@ -1,5 +1,26 @@
 ﻿@import '_Variables.scss';
 
-.header {
-    color: $header-color;
+.navbar-default {
+    background-color: $header-bg-color;
+    border-color: $header-color;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+.nav-top-bar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 10px;
 }

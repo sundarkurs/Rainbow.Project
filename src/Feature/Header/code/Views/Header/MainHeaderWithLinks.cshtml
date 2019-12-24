@@ -1,24 +1,55 @@
-﻿
+﻿@using Sitecore.Mvc
+@using System.Collections.Generic;
+@model List<Rain.Feature.Header.Models._GenericLink>
 
-<div class="main-header">
-    <div class="content-wrapper">
-        <div class="top-bar__left">
-            Main header
-        </div>
-        <div class="top-bar__right">
-            @*<ul class="menu">
-                @foreach (var item in Model)
-                {
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">BRAND logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    @foreach (var item in Model)
+                    {
                     if (item.Link == null)
                     {
-                        <li class="menu__item"><a href="#">@item.Title</a></li>
+                    <li><a href="#">@item.Title</a></li>
                     }
                     else
                     {
-                        <li class="menu__item"><a href="@item.Link.Url">@item.Title</a></li>
+                    <li><a href="@item.Link.Url">@item.Title</a></li>
                     }
-                }
-            </ul>*@
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Who Am I?</h3>
+        <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+        <h3>I'm an adventurer</h3>
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h3 class="margin">Where To Find Me?</h3><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
         </div>
     </div>
-</div>

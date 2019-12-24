@@ -12,7 +12,7 @@ var scssConfig = {
     featurePath: 'src/feature/*/code/Assets/Styling/*.scss',
     projectPath: 'src/project/*/code/Assets/Styling/*.scss',
     stylesStagingFolder: 'stylesStagingFolder',
-    minOutput: 'stylesStagingFolder',
+    minOutput: 'src/project/website/code/assets/css/',
     stylingPath: 'src/+(Feature|Foundation|Project)/*/code/Assets/Styling/*.scss'
 
 };
@@ -56,7 +56,7 @@ gulp.task('Compile-All-Styles', function () {
     var stagingStyles = [scssConfig.stylesStagingFolder + '/foundation.css', scssConfig.stylesStagingFolder + '/feature.css', scssConfig.stylesStagingFolder + '/project.css'];
 
     return gulp.src(stagingStyles, { allowEmpty: true }) //use foundation, feature, project styling
-        .pipe(concat('helix-styling.css'))  //concatenate all three styling files into one
+        .pipe(concat('website.css'))  //concatenate all three styling files into one
         .pipe(cleanCSS())                   //minify
         .pipe(header('/* THIS IS A GENERATED FILE */'))
         .pipe(gulp.dest(scssConfig.minOutput));        //output to folder

@@ -1,0 +1,21 @@
+﻿@using Sitecore.Mvc
+@using System.Collections.Generic;
+@model List<Rain.Feature.Footer.Models._GenericLink>
+
+<footer class="footer-bar text-center">
+    <div>
+        <ul>
+            @foreach (var item in Model)
+            {
+                if (item.Link == null)
+                {
+                    <li><a href="#">@item.Title</a></li>
+                }
+                else
+                {
+                    <li><a href="@item.Link.Url">@item.Title</a></li>
+                }
+            }
+        </ul>
+    </div>
+</footer>
