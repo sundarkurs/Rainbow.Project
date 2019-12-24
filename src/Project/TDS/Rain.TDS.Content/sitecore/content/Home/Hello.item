@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {441C52D0-7114-4A17-BA70-2101B1A1763B}
+database: master
+path: /sitecore/content/Home/Hello
+parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+name: Hello
+master: {00000000-0000-0000-0000-000000000000}
+template: {BCF88EFC-3AAB-4A6E-96CF-3FE1D2BCA7F3}
+templatekey: Basic Content
+created: 20190912T072144Z
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 302
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{5F069F25-013D-4DBD-B99A-03C33E813ABE}"><r ds="{441C52D0-7114-4A17-BA70-2101B1A1763B}" id="{856722E9-6C74-4FD8-80B7-C37F40C45949}" par="" ph="main" uid="{3DD7D882-35F4-4718-8528-53B8DFE1882D}" /></d></r>
+----version----
+language: en
+version: 1
+revision: b7c3f759-688a-4ed5-913a-4095268f98ef
+
+----field----
+field: {6F47AF08-C544-40FD-9FE7-F7F9578C3C02}
+name: Title
+key: title
+content-length: 11
+
+Hello Helix
+----field----
+field: {5D175D16-5F2A-4928-8FEC-397F31AA3496}
+name: Body
+key: body
+content-length: 16
+
+Welcome to helix
+----field----
+field: {AD297862-7DF6-4086-AA31-4D2A1CBFEC0A}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{4B48D87B-E463-42DD-B0F2-F45C382F6204}" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190912T072144Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b7c3f759-688a-4ed5-913a-4095268f98ef
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190912T072414Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

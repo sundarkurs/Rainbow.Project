@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {C6AAE33B-06B6-4879-84F3-99B8DC186377}
+database: master
+path: /sitecore/content/Website/Home
+parent: {7FF85BD2-A181-4D21-850B-E70CFCACC0FA}
+name: Home
+master: {00000000-0000-0000-0000-000000000000}
+template: {D48B570B-095E-4E4F-9004-3B1D11DE197F}
+templatekey: Home
+created: 20191222T114515Z
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 4042
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{5F069F25-013D-4DBD-B99A-03C33E813ABE}"><r id="{B42FF06E-A668-4DE8-95FB-BA4C98251790}" ph="header" uid="{68643826-5397-4555-9219-D66B66A679DB}"><rls><ruleset><rule name="website-in" uid="{B9A33978-B30F-4120-8D01-A5511CAE7731}"><conditions><condition id="{22CB5885-BC8F-4F29-8F04-44EA87BA0AC8}" uid="DA3EAB510F4D478190A825AF9995F00B" OperatorId="{10537C58-1684-4CAB-B4C0-40C10907CE31}" Value="{E1B50FC8-52AC-4F98-A59D-4FAC32516C53}" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="CD87785C179A4D889DA6BC179530C675" DataSource="{A069CB25-FEB3-4504-98E1-9281A9B5627B}" /></actions></rule><rule name="website-au" uid="{7D067C97-F6DB-4E90-8693-468A4C038EC9}"><conditions><condition id="{22CB5885-BC8F-4F29-8F04-44EA87BA0AC8}" uid="7AE21E6651074D96964D876F56ECCD16" OperatorId="{10537C58-1684-4CAB-B4C0-40C10907CE31}" Value="{C0E71299-924C-43DA-823A-BEC0A0BDE927}" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="3612816C319A45D19164F2BFD461F87D" DataSource="{16C51E3A-71B2-4A59-8508-8E96545597E1}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition id="{4888ABBB-F17D-4485-B14B-842413F88732}" uid="2BCBFC8CBAB74084AD61E8F9E7743D09" /></conditions><actions /></rule></ruleset></rls></r><r id="{1F264D41-D734-429B-BE59-BAA42B4EA879}" ph="header" uid="{D4BA1833-24F3-45BF-A165-EC538880FB62}"><rls><ruleset><rule name="website-in" uid="{D722FE1C-E30A-47DF-95BA-96C0CB01F33E}"><conditions><condition id="{22CB5885-BC8F-4F29-8F04-44EA87BA0AC8}" uid="9CE1BC559DDA42C885D70595E9EB90A6" OperatorId="{10537C58-1684-4CAB-B4C0-40C10907CE31}" Value="{E1B50FC8-52AC-4F98-A59D-4FAC32516C53}" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="20284756B0EF4E4A86264066FF6F8B19" DataSource="{6085FF31-CD47-4150-8601-B70769D94467}" /></actions></rule><rule name="website-au" uid="{4928D3BB-A6E0-46E6-96C9-54EB62368D49}"><conditions><condition id="{22CB5885-BC8F-4F29-8F04-44EA87BA0AC8}" uid="62D35633517F4ADFB70C940F4A9FE100" OperatorId="{10537C58-1684-4CAB-B4C0-40C10907CE31}" Value="{C0E71299-924C-43DA-823A-BEC0A0BDE927}" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="8D022D4CD2A84837BBE3844DB0DE8CDE" DataSource="{EBFC5BDA-50A2-4956-BE23-D93D8615BD40}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition id="{4888ABBB-F17D-4485-B14B-842413F88732}" uid="42DAD6519F3E4BBAB282B90DE948F779" /></conditions><actions /></rule></ruleset></rls></r><r id="{83590A41-4209-4DFE-B813-357F6448457A}" ph="footer" uid="{301DB9E0-0F52-449B-B83C-D190F280D69B}"><rls><ruleset><rule name="website-in" uid="{9042DF5C-7BFD-417E-83AC-C19425522768}"><conditions><condition id="{22CB5885-BC8F-4F29-8F04-44EA87BA0AC8}" uid="6796C092EA224CDE87A26AAE534BF9F0" OperatorId="{10537C58-1684-4CAB-B4C0-40C10907CE31}" Value="{E1B50FC8-52AC-4F98-A59D-4FAC32516C53}" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="B15A08E5FCAE479FAAD89F48F2C5426E" DataSource="{CA03795C-7F4F-4E9A-8198-F6967CBF39E3}" /></actions></rule><rule name="website-au" uid="{7BE2618A-2B04-4BBD-A4D9-2FA6F9B35C36}"><conditions><condition id="{22CB5885-BC8F-4F29-8F04-44EA87BA0AC8}" uid="D5D49249C0D645549A2DBFDC91411526" OperatorId="{10537C58-1684-4CAB-B4C0-40C10907CE31}" Value="{C0E71299-924C-43DA-823A-BEC0A0BDE927}" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="82351310766D45BE8950793322F4E7F1" DataSource="{96D308CC-2F3C-4EF3-8AD0-7E73FD48233C}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition id="{4888ABBB-F17D-4485-B14B-842413F88732}" uid="D4FD36B56BA64212B5C87881FAA28EA9" /></conditions><actions /></rule></ruleset></rls></r><r id="{F6BADD52-3237-4CE2-9484-9FC046B7B8F6}" ph="footer" uid="{163A232B-9F77-472C-823D-38BC128B7005}" /></d></r>
+----version----
+language: en
+version: 1
+revision: 321d5b26-c5da-4bb3-b3da-8817fe454ac9
+
+----field----
+field: {A0F44415-B314-40F2-93CE-076E890F5DDE}
+name: Page Title
+key: page title
+content-length: 4
+
+Home
+----field----
+field: {33CD380E-E4C2-454B-ABE9-43FAB8B8AFA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191222T114515Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+321d5b26-c5da-4bb3-b3da-8817fe454ac9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191224T103124Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

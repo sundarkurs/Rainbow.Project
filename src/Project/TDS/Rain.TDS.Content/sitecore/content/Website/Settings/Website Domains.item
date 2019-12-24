@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {D8702998-B0BD-4ED3-AE46-36BF45EC53F3}
+database: master
+path: /sitecore/content/Website/Settings/Website Domains
+parent: {8A4FF41E-E109-4715-ABC8-8A5DED4EB30D}
+name: Website Domains
+master: {00000000-0000-0000-0000-000000000000}
+template: {FFEBFFF9-F751-4D60-8050-132A5B1A8BBE}
+templatekey: Domains Folder
+created: 20191223T074139Z
+
+----version----
+language: en
+version: 1
+revision: 967e54ee-5bbe-4bb3-899a-9f44a32b6cd9
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191223T074139Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+967e54ee-5bbe-4bb3-899a-9f44a32b6cd9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191224T050021Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

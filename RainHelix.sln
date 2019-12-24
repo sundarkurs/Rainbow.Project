@@ -40,6 +40,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SitecoreExtensions", "Sitec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rain.Foundation.SitecoreExtensions", "src\Foundation\SitecoreExtensions\code\Rain.Foundation.SitecoreExtensions.csproj", "{5778ACD7-600E-48CC-98FE-B8818C5669C9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TDS", "TDS", "{7B6624F7-4008-444C-96AF-F18D5685286D}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Rain.TDS.Core", "src\Project\TDS\Rain.TDS.Core\Rain.TDS.Core.scproj", "{59B7F132-3FDC-43EB-84F6-A20F3F002693}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Rain.TDS.Master", "src\Project\TDS\Rain.TDS.Master\Rain.TDS.Master.scproj", "{75B44E4B-DA7A-4D0B-A7A5-A5A9CDEA1B08}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Rain.TDS.Content", "src\Project\TDS\Rain.TDS.Content\Rain.TDS.Content.scproj", "{8593A4F3-686F-4B48-BFD1-C13FF726C570}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +74,24 @@ Global
 		{5778ACD7-600E-48CC-98FE-B8818C5669C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5778ACD7-600E-48CC-98FE-B8818C5669C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5778ACD7-600E-48CC-98FE-B8818C5669C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B7F132-3FDC-43EB-84F6-A20F3F002693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B7F132-3FDC-43EB-84F6-A20F3F002693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B7F132-3FDC-43EB-84F6-A20F3F002693}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{59B7F132-3FDC-43EB-84F6-A20F3F002693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B7F132-3FDC-43EB-84F6-A20F3F002693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B7F132-3FDC-43EB-84F6-A20F3F002693}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{75B44E4B-DA7A-4D0B-A7A5-A5A9CDEA1B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75B44E4B-DA7A-4D0B-A7A5-A5A9CDEA1B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75B44E4B-DA7A-4D0B-A7A5-A5A9CDEA1B08}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{75B44E4B-DA7A-4D0B-A7A5-A5A9CDEA1B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75B44E4B-DA7A-4D0B-A7A5-A5A9CDEA1B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75B44E4B-DA7A-4D0B-A7A5-A5A9CDEA1B08}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8593A4F3-686F-4B48-BFD1-C13FF726C570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8593A4F3-686F-4B48-BFD1-C13FF726C570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8593A4F3-686F-4B48-BFD1-C13FF726C570}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8593A4F3-686F-4B48-BFD1-C13FF726C570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8593A4F3-686F-4B48-BFD1-C13FF726C570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8593A4F3-686F-4B48-BFD1-C13FF726C570}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +107,9 @@ Global
 		{0C3A3FDB-ADC1-4E02-814C-6346DAF099F6} = {41FC76A0-3CDC-47CF-A8C6-B1B5EF19FB20}
 		{A27ACBF6-9A06-40C6-9FE0-E486CB2AF54D} = {10436794-AF2E-48C2-86A1-053E61A17659}
 		{5778ACD7-600E-48CC-98FE-B8818C5669C9} = {A27ACBF6-9A06-40C6-9FE0-E486CB2AF54D}
+		{59B7F132-3FDC-43EB-84F6-A20F3F002693} = {7B6624F7-4008-444C-96AF-F18D5685286D}
+		{75B44E4B-DA7A-4D0B-A7A5-A5A9CDEA1B08} = {7B6624F7-4008-444C-96AF-F18D5685286D}
+		{8593A4F3-686F-4B48-BFD1-C13FF726C570} = {7B6624F7-4008-444C-96AF-F18D5685286D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
