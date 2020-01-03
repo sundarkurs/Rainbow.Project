@@ -25,6 +25,8 @@
     <ConnectorTimeoutSeconds>120</ConnectorTimeoutSeconds>
     <SitecoreDeployFolder>D:\websites\sc911.local</SitecoreDeployFolder>
     <SitecoreAccessGuid>f6f39bbe-3db5-4685-b0d9-4a9b014385a3</SitecoreAccessGuid>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Rain.TDS.Deploy_Debug.xml</ValidationSettingsFilePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -43,6 +45,10 @@
     <ProjectReference Include="..\..\..\Feature\BasicContent\code\Rain.Feature.BasicContent.csproj">
       <Project>{2dd81b04-31b7-4a8d-b081-2f84721de9f6}</Project>
       <Name>Rain.Feature.BasicContent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Feature\Carousel\code\Rain.Feature.Carousel.csproj">
+      <Project>{c6b57cde-d8a2-4043-9a18-14bcf1f60e9d}</Project>
+      <Name>Rain.Feature.Carousel</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Feature\Carousel\code\Rain.Feature.Carousel.vbproj">
       <Project>{7c6d09ee-30e2-4dcb-936d-d5ae3fe28d47}</Project>
@@ -99,10 +105,10 @@
       <SourceWebVirtualPath>/Rain.Foundation.SitecoreExtensions.csproj</SourceWebVirtualPath>
       <SourceWebProjectId>5778acd7-600e-48cc-98fe-b8818c5669c9</SourceWebProjectId>
     </SourceWebProjects>
-    <SourceWebProjects Include="{7c6d09ee-30e2-4dcb-936d-d5ae3fe28d47}|src\Feature\Carousel\code\Rain.Feature.Carousel.vbproj">
+    <SourceWebProjects Include="{c6b57cde-d8a2-4043-9a18-14bcf1f60e9d}|src\Feature\Carousel\code\Rain.Feature.Carousel.csproj">
       <SourceWebPhysicalPath>..\..\..\Feature\Carousel\code</SourceWebPhysicalPath>
-      <SourceWebVirtualPath>/Rain.Feature.Carousel.vbproj</SourceWebVirtualPath>
-      <SourceWebProjectId>7c6d09ee-30e2-4dcb-936d-d5ae3fe28d47</SourceWebProjectId>
+      <SourceWebVirtualPath>/Rain.Feature.Carousel.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>c6b57cde-d8a2-4043-9a18-14bcf1f60e9d</SourceWebProjectId>
     </SourceWebProjects>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
