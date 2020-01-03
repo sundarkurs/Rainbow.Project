@@ -215,10 +215,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\Carousel\Slides.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Controllers\CarouselController.cs" />
+    <Compile Include="Models\_Carousel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -233,8 +236,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

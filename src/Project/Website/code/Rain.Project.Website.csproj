@@ -220,6 +220,9 @@
     <Content Include="Assets\bootstrap\montserrat.css" />
     <Content Include="Assets\css\website.css" />
     <Content Include="Assets\jquery\jquery.min.js" />
+    <Content Include="Content\Website\image\carousel\carousel-1.jpg" />
+    <Content Include="Content\Website\image\carousel\carousel-2.jpg" />
+    <Content Include="Content\Website\image\carousel\carousel-3.jpg" />
     <Content Include="Content\Website\image\website-logo.png" />
     <Content Include="Views\Layouts\MainLayout.cshtml" />
     <Content Include="Assets\Styling\_Website.scss" />
