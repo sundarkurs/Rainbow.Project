@@ -1,7 +1,11 @@
-﻿@model Sitecore.Data.Items.Item
+﻿@using System;
+@using System.Collections.Generic;
+
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Sitecore.Resources.Media
+
+@model List<Rain.Feature.Carousel.Models._Carousel>
 
 @if (Model != null)
 {
@@ -11,37 +15,37 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                @{
+                    int li = 0;
+                    foreach (var slideImage in Model)
+                    {
+                        if (li == 0)
+                        {
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        }
+                        else
+                        {
+                            <li data-target="#myCarousel" data-slide-to="@li"></li>
+                        }
+
+                        li++;
+                    }
+                }
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-
                 @{
-                    IEnumerable<Item> heroImages = null;
-                    var heroImagesField = new MultilistField(Model.Fields["Slide Images"]);
-
-                    if (heroImagesField != null)
+                    int i = 1;
+                    foreach (var slideImage in Model)
                     {
-                        heroImages = heroImagesField.GetItems();
-                    }
+                        <div class="item @(i == 1 ? "active" : "") ">
+                            <img src="@slideImage.ImageUrl" style="width:100%;" />
+                        </div>
 
-                    if (heroImages != null)
-                    {
-                        int i = 1;
-                        foreach (var image in heroImages)
-                        {
-                            var mediaItem = (MediaItem)image;
-                            <div class="item @(i == 1 ? "active" : "") ">
-                                <img src="@MediaManager.GetMediaUrl(mediaItem)" style="width:100%;" />
-                            </div>
-                            i++;
-                        }
+                        i++;
                     }
                 }
-               
             </div>
 
 
