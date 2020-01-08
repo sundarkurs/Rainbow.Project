@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {4D3D5D18-4CAC-488A-87A5-2CBB9B810C51}
+database: master
+path: /sitecore/templates/Feature/Carousel/_Carousel/Carousel Fields/Slide Images
+parent: {21F74452-9103-41D7-8FB1-E85434C91C16}
+name: Slide Images
+master: {00000000-0000-0000-0000-000000000000}
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
+created: 20200103T122549Z
+
+----field----
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 8
+
+Treelist
+----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 40
+
+/sitecore/media library/Feature/Carousel
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----version----
+language: en
+version: 1
+revision: 8d05aa05-912e-4839-96ad-5e0344069960
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200103T122550Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8d05aa05-912e-4839-96ad-5e0344069960
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200103T123106Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

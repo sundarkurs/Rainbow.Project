@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {8B865803-B93F-46E8-957D-68C3E18D1C39}
+database: master
+path: /sitecore/layout/Renderings/Feature/Carousel/Carousel
+parent: {B6314598-2621-454C-AA34-75B4E81791B2}
+name: Carousel
+master: {00000000-0000-0000-0000-000000000000}
+template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
+templatekey: Controller rendering
+created: 20200103T124328Z
+
+----field----
+field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
+name: Controller
+key: controller
+content-length: 8
+
+Carousel
+----field----
+field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
+name: Controller Action
+key: controller action
+content-length: 6
+
+Slides
+----field----
+field: {5A14936F-2100-4541-B700-2F122E88F3F8}
+name: Data source
+key: data source
+content-length: 59
+
+/sitecore/content/Website/Settings/Data Sources/Carousel/AU
+----version----
+language: en
+version: 1
+revision: 6845fb77-9d9f-4983-9e7b-643da7ab917b
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200103T124328Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6845fb77-9d9f-4983-9e7b-643da7ab917b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200103T125840Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
