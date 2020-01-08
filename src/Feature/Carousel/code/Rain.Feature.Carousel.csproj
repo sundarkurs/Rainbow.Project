@@ -216,6 +216,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Carousel\Slides.cshtml" />
+    <Content Include="Assets\Styling\_Carousel.scss" />
+    <Content Include="Assets\Styling\Carousel.scss" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
