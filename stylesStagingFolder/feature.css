@@ -1,4 +1,15 @@
-/* FEATURE STYLING */.footer-bar {
+/* FEATURE STYLING */.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden; }
+
+.carousel-pad {
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+
+.footer-bar {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #2f2f2f;
@@ -21,7 +32,6 @@
 .copyright-bar {
   background-color: #2f2f2f;
   font-size: 12px; }
-
 
 .navbar-default {
   background-color: #f8f8f8;

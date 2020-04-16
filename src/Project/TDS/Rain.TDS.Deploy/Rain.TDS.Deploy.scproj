@@ -62,6 +62,10 @@
       <Project>{36e68f67-3bd5-40a8-aa7b-89eca453a5af}</Project>
       <Name>Rain.Feature.Header</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Feature\Tour\code\Rain.Feature.Tour.csproj">
+      <Project>{9109d07e-f320-4dd1-96bb-896b5b1a0cc6}</Project>
+      <Name>Rain.Feature.Tour</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Rain.Foundation.SitecoreExtensions.csproj">
       <Project>{5778acd7-600e-48cc-98fe-b8818c5669c9}</Project>
       <Name>Rain.Foundation.SitecoreExtensions</Name>
@@ -104,6 +108,11 @@
       <SourceWebPhysicalPath>..\..\..\Foundation\SitecoreExtensions\code</SourceWebPhysicalPath>
       <SourceWebVirtualPath>/Rain.Foundation.SitecoreExtensions.csproj</SourceWebVirtualPath>
       <SourceWebProjectId>5778acd7-600e-48cc-98fe-b8818c5669c9</SourceWebProjectId>
+    </SourceWebProjects>
+    <SourceWebProjects Include="{9109d07e-f320-4dd1-96bb-896b5b1a0cc6}|src\Feature\Tour\code\Rain.Feature.Tour.csproj">
+      <SourceWebPhysicalPath>..\..\..\Feature\Tour\code</SourceWebPhysicalPath>
+      <SourceWebVirtualPath>/Rain.Feature.Tour.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>9109d07e-f320-4dd1-96bb-896b5b1a0cc6</SourceWebProjectId>
     </SourceWebProjects>
     <SourceWebProjects Include="{c6b57cde-d8a2-4043-9a18-14bcf1f60e9d}|src\Feature\Carousel\code\Rain.Feature.Carousel.csproj">
       <SourceWebPhysicalPath>..\..\..\Feature\Carousel\code</SourceWebPhysicalPath>
